@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <main class="wrapper flex">
+    <h1 class="title">SLPI <br> TTER</h1>
+
+    <div class="splitter-wrapper">
+      <div class="splitter-container flex">
+        <div class="splitter-col splitter-col--input">
+          <!-- bill input -->
+          <div class="bill-input">
+            <label for="billInput">Bill</label>
+              <input type="text" id="billInput" placeholder="0">
+          </div>
+          <!-- tip selector -->
+          <div class="tip-selector">
+            <p class="select-tip" aria-label="select-tip">Select Tip %</p>
+            <ul class="grid select-buttons">
+              <li><button aria-label="5%" class="selectAmount">5%</button></li>
+              <li><button aria-label="10%" class="selectAmount">10%</button></li>
+              <li><button aria-label="15%" class="selectAmount">15%</button></li>
+              <li><button aria-label="25%" class="selectAmount">25%</button></li>
+              <li><button aria-label="50%" class="selectAmount">50%</button></li>
+              <li><label for="customInput">
+                <input type="text" placeholder="Custom" id="customInput">
+              </label></li>
+            </ul>
+          </div>
+          <!-- People selector -->
+          <div class="people">
+            <div class="flex"><label for="peopleInput">Number of People</label> <p class="error-message">Can't be zero</p> </div>
+              <input type="text" id="peopleInput" placeholder="0">
+          </div>
+        </div>
+        <div class="splitter-col splitter-col--total">
+          <div class="tip-amount flex">
+            <p class="amount">Tip Amount <span>/ person</span></p>
+            <p class="tip-amount person">$0.00</p>
+          </div>
+          <div class="tip-amount flex">
+            <p class="amount">Total <span>/ person</span></p>
+            <p class="tip-amount total">$0.00</p>
+          </div>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+</body>
+</html>
