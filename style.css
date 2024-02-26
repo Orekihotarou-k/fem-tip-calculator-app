@@ -115,6 +115,10 @@ label, .select-tip {
 }
 
 /* components */
+input {
+    border-radius: .2rem;
+}
+
 input:focus {
     outline: 2px solid var(--clr-primary-Strong-cyan);
 }
@@ -130,6 +134,10 @@ input:focus {
 
 #peopleInput {
     background-image: url(images/icon-person.svg);
+}
+
+.error {
+    outline: 2px solid var(--clr-primary-Strong-red);
 }
 
 #customInput {
@@ -208,7 +216,6 @@ button:focus {
 .splitter-container > * {
     flex-basis: 100%;
     flex: 1 0 18rem;
-    height: 13em;
 }
 
 .select-buttons {
@@ -220,6 +227,7 @@ button:focus {
 .splitter-container {
     padding: 2rem;
     border-radius: 1rem;
+    width: 35em;
     background-color: var(--clr-neutral-White);
 }
 
@@ -249,4 +257,22 @@ button:focus {
 
 .people div {
     justify-content: space-between;
+}
+
+
+/* media query */
+@media (max-width: 850px) {
+    .splitter-container {
+        width: auto;
+        border-radius: 1.5rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    .tip-amount {
+        font-size: 1.75rem;
+    }
 }
