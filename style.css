@@ -276,3 +276,9 @@ button:focus {
         font-size: 1.75rem;
     }
 }
+
+@media (min-width: 1300px) {
+    .wrapper {
+        height: 100dvh;
+    }
+}
